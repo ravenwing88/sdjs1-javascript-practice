@@ -7,13 +7,41 @@
     console.log('Cheese Ravioli with Pesto') */
 
 // Here's where I'll attempt the more fun coding:
-var fullName = document.getElementById('fullname');
-var favFood = document.getElementById('favfood');
+// var fullName = document.getElementById('fullname');
+const FULLNAME = "Big Sean";
+const FAVFOOD = "Cheese Ravioli with Pesto";
+const YEAR = 1988;
+const SUPERWORD = "Supercalifragilisticexpialidocious";
+let superLength = SUPERWORD.length;
+let number = 42;
 
-fullName.onclick = function() {
-    console.log('Big Sean');
+const HEADER = `
+    <h1>Hello, my name is ${FULLNAME}</h1>
+`;
+
+const SECTION = `
+    <section>
+        <p>number is ${number}
+    </section
+`;
+const FOOTER = `
+    <footer>
+        <p>&copy; ${YEAR}</p>
+    </footer>
+`;
+
+fullname.onclick = function() {
+    console.log(FULLNAME);
 }
 
-favFood.onclick = function() {
-    console.log('Cheese Ravioli with Pesto');
+favfood.onclick = function() {
+    console.log(FAVFOOD);
+}
+
+superca.onclick = function() {
+    console.log(superLength);
+}
+
+day2.onclick = function() {
+    document.body.innerHTML = HEADER + SECTION + FOOTER;
 }
